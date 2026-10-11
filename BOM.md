@@ -12,7 +12,6 @@
 
 | Part | What it's for | Qty | Unit | Total | Vendor |
 | --- | --- | --- | --- | --- | --- |
-| C3 | Electrolytic capacitor 100uF 35V | 1 | $0.00 | $0.00 | — |
 | C4 | Ceramic disc capacitor 100nF | 1 | $0.00 | $0.00 | — |
 | C5 | Ceramic disc capacitor 100nF | 1 | $0.00 | $0.00 | — |
 | C6 | Ceramic disc capacitor 100nF | 1 | $0.00 | $0.00 | — |
