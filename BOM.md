@@ -12,12 +12,9 @@
 
 | Part | What it's for | Qty | Unit | Total | Vendor |
 | --- | --- | --- | --- | --- | --- |
-| U2 | USB-C PD Sink Fast Charging Controller | 1 | $3.90 | $3.90 | AliExpress |
-| U3 | TMC2209 StepStick Driver Module | 1 | $4.00 | $4.00 | AliExpress |
-| U4 | Optocoupler DIP-4 | 1 | $3.90 | $3.90 | AliExpress |
 | [Stepper Motor](https://it.aliexpress.com/item/1005009871350727.html?spm=a2g0o.productlist.main.2.200c3f1ccybbem&algo_pvid=1661e4b7-8965-4524-b71c-b4142f89dca8&algo_exp_id=1661e4b7-8965-4524-b71c-b4142f89dca8-1&pdp_ext_f=%7B%22order%22%3A%22723%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21EUR%2112.99%2112.99%21%21%2114.24%2114.24%21%400b88486a17917125131173038e0c9a%2112000052154483495%21sea%21IT%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3Acd5be8b0%3Bm03_new_user%3A-29895&curPageLogUid=WQ5X7RooPVFG&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005009871350727%7C_p_origin_prod%3A) | Motor | 1 | $12.99 | $12.99 | [Aliexpress](https://it.aliexpress.com/item/1005009871350727.html?spm=a2g0o.productlist.main.2.200c3f1ccybbem&algo_pvid=1661e4b7-8965-4524-b71c-b4142f89dca8&algo_exp_id=1661e4b7-8965-4524-b71c-b4142f89dca8-1&pdp_ext_f=%7B%22order%22%3A%22723%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21EUR%2112.99%2112.99%21%21%2114.24%2114.24%21%400b88486a17917125131173038e0c9a%2112000052154483495%21sea%21IT%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3Acd5be8b0%3Bm03_new_user%3A-29895&curPageLogUid=WQ5X7RooPVFG&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005009871350727%7C_p_origin_prod%3A) |
-| **Parts subtotal** | — | — | — | **$24.79** | — |
+| **Parts subtotal** | — | — | — | **$12.99** | — |
 | **Tax & shipping** | — | — | — | **$0.00** | — |
-| **Total** | — | — | — | **$24.79** | — |
+| **Total** | — | — | — | **$12.99** | — |
 
-$40.21 left of the tier's funding.
+$52.01 left of the tier's funding.
