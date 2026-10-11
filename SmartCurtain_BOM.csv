@@ -1,25 +1,25 @@
-Part,Value,Device,Package,Quantity,Description
-C3,100uF,Capacitor_Polarized,CP_Radial_D6.3mm_P2.50mm,1,Electrolytic capacitor 100uF 35V
-C4,100nF,Capacitor_Ceramic,C_Disc_D4.3mm_W1.9mm_P5.00mm,1,Ceramic disc capacitor 100nF
-C5,100nF,Capacitor_Ceramic,C_Disc_D4.3mm_W1.9mm_P5.00mm,1,Ceramic disc capacitor 100nF
-C6,100nF,Capacitor_Ceramic,C_Disc_D4.3mm_W1.9mm_P5.00mm,1,Ceramic disc capacitor 100nF
-D1,LD271,LED_IR,LED_D5.0mm_IRGrey,1,940nm IR Emitter LED 5mm
-J1,MKDS 1.5/4-5.08,Terminal_Block,TerminalBlock_Phoenix_MKDS-1.5-4-5.08,1,4-Pin Screw Terminal 5.08mm (Stepper)
-J2,TYPE-C-31-M-12,USB_C_Receptacle,USB_C_Receptacle_HRO_TYPE-C-31-M-12,1,USB-C 16-Pin Receptacle
-J3,MKDS 1.5/2-5.08,Terminal_Block,TerminalBlock_Phoenix_MKDS-1.5-2-5.08,1,2-Pin Screw Terminal 5.08mm
-J5,Mini360_Buck,PinHeader,PinHeader_1x04_P2.54mm_Vertical,1,Mini360 Step-Down Buck Converter Module
-LuceClima1,MKDS 1.5/4-5.08,Terminal_Block,TerminalBlock_Phoenix_MKDS-1.5-4-5.08,1,4-Pin Screw Terminal (Light/Climate Sensor)
-Q1,2N2222,Transistor_NPN,TO-92L_Inline,1,NPN BJT Transistor TO-92
-R2,6.8k,Resistor,R_0805_2012Metric,1,Resistor 0805 6.8k ohm
-R3,1k,Resistor,R_0805_2012Metric,1,Resistor 0805 1k ohm
-R4,47,Resistor,R_0805_2012Metric,1,Resistor 0805 47 ohm
-R5,10k,Resistor,R_0805_2012Metric,1,Resistor 0805 10k ohm
-R6,470,Resistor,R_0805_2012Metric,1,Resistor 0805 470 ohm
-R7,4.7k,Resistor,R_0805_2012Metric,1,Resistor 0805 4.7k ohm (I2C pull-up)
-R8,4.7k,Resistor,R_0805_2012Metric,1,Resistor 0805 4.7k ohm (I2C pull-up)
-RadarmmWave1,MKDS 1.5/4-5.08,Terminal_Block,TerminalBlock_Phoenix_MKDS-1.5-4-5.08,1,4-Pin Screw Terminal (mmWave Sensor)
-SW1,EC11,Rotary_Encoder,RotaryEncoder_Alps_EC11E-Switch_Vertical,1,Rotary Encoder EC11 with push switch
-U1,ESP32-C3-WROOM-02,RF_Module,ESP32-C3-WROOM-02,1,ESP32-C3 Wi-Fi/BLE SoC Module
-U2,CH224K,IC_PD_Sink,SSOP-10-1EP_3.9x4.9mm_P1mm,1,USB-C PD Sink Fast Charging Controller
-U3,TMC2209,Driver_Stepper,Pololu_Breakout-16_15.2x20.3mm,1,TMC2209 StepStick Driver Module
-U4,PC817,Optocoupler,DIP-4_W7.62mm,1,Optocoupler DIP-4
+Part,Value,Device,Package,Quantity,Price,Description
+C3,100uF,Capacitor_Polarized,CP_Radial_D6.3mm_P2.50mm,1,"€ 2,30",Electrolytic capacitor 100uF 35V
+C4,100nF,Capacitor_Ceramic,C_Disc_D4.3mm_W1.9mm_P5.00mm,1,"€ 2,40",Ceramic disc capacitor 100nF
+C5,100nF,Capacitor_Ceramic,C_Disc_D4.3mm_W1.9mm_P5.00mm,1,/,Ceramic disc capacitor 100nF
+C6,100nF,Capacitor_Ceramic,C_Disc_D4.3mm_W1.9mm_P5.00mm,1,/,Ceramic disc capacitor 100nF
+D1,LD271,LED_IR,LED_D5.0mm_IRGrey,1,"€ 1,70",940nm IR Emitter LED 5mm
+J1,MKDS 1.5/4-5.08,Terminal_Block,TerminalBlock_Phoenix_MKDS-1.5-4-5.08,1,"€ 3,00",4-Pin Screw Terminal 5.08mm (Stepper)
+J2,TYPE-C-31-M-12,USB_C_Receptacle,USB_C_Receptacle_HRO_TYPE-C-31-M-12,1,"€ 1,15",USB-C 16-Pin Receptacle
+J3,MKDS 1.5/2-5.08,Terminal_Block,TerminalBlock_Phoenix_MKDS-1.5-2-5.08,1,"€ 2,75",2-Pin Screw Terminal 5.08mm
+J5,Mini360_Buck,PinHeader,PinHeader_1x04_P2.54mm_Vertical,1,"€ 2,00",Mini360 Step-Down Buck Converter Module
+LuceClima1,MKDS 1.5/4-5.08,Terminal_Block,TerminalBlock_Phoenix_MKDS-1.5-4-5.08,1,/,4-Pin Screw Terminal (Light/Climate Sensor)
+Q1,2N2222,Transistor_NPN,TO-92L_Inline,1,"€ 2,40",NPN BJT Transistor TO-92
+R2,6.8k,Resistor,R_0805_2012Metric,1,"€ 6,00",Resistor 0805 6.8k ohm
+R3,1k,Resistor,R_0805_2012Metric,1,/,Resistor 0805 1k ohm
+R4,47,Resistor,R_0805_2012Metric,1,/,Resistor 0805 47 ohm
+R5,10k,Resistor,R_0805_2012Metric,1,/,Resistor 0805 10k ohm
+R6,470,Resistor,R_0805_2012Metric,1,/,Resistor 0805 470 ohm
+R7,4.7k,Resistor,R_0805_2012Metric,1,/,Resistor 0805 4.7k ohm (I2C pull-up)
+R8,4.7k,Resistor,R_0805_2012Metric,1,/,Resistor 0805 4.7k ohm (I2C pull-up)
+RadarmmWave1,MKDS 1.5/4-5.08,Terminal_Block,TerminalBlock_Phoenix_MKDS-1.5-4-5.08,1,/,4-Pin Screw Terminal (mmWave Sensor)
+SW1,EC11,Rotary_Encoder,RotaryEncoder_Alps_EC11E-Switch_Vertical,1,"€ 1,60",Rotary Encoder EC11 with push switch
+U1,ESP32-C3-WROOM-02,RF_Module,ESP32-C3-WROOM-02,1,"€ 6,00",ESP32-C3 Wi-Fi/BLE SoC Module
+U2,CH224K,IC_PD_Sink,SSOP-10-1EP_3.9x4.9mm_P1mm,1,"€ 3,90",USB-C PD Sink Fast Charging Controller
+U3,TMC2209,Driver_Stepper,Pololu_Breakout-16_15.2x20.3mm,1,"€ 4,00",TMC2209 StepStick Driver Module
+U4,PC817,Optocoupler,DIP-4_W7.62mm,1,"€ 3,90",Optocoupler DIP-4
