@@ -16,3 +16,7 @@ The PCB routing phase initially incorporated an automated pass via Freerouting, 
 3.3V logic supply lines routed at 0.4 mm width and digital signal traces at 0.25 mm width.
 
 Mechanical clearances and drill constraints adjusted to eliminate collisions, achieving 0 DRC errors and 0 unrouted nets.
+
+
+<img width="1666" height="896" alt="image" src="https://github.com/user-attachments/assets/ee2d2672-825f-4753-9477-3d6ed6f3a02f" />
+
