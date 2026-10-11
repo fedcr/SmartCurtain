@@ -1,15 +1,15 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
+#include <Preferences.h>
 
-//home wifi and server setup
 const char* ssid = "WIFI_NAME";
 const char* password = "WIFI_PASSWORD";
-const char* mqtt_server = "192.168.1.100"; //ip of the server running home assistant
+const char* mqtt_server = "192.168.1.100";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
+Preferences prefs;
 
-//pin declaration
 int STEP_PIN = 0;
 int DIR_PIN = 1;
 int EN_PIN = 2;
@@ -24,32 +24,36 @@ int OPTO_PIN = 8;
 int RADAR_PIN = 20;
 int J3_PIN = 19;
 
-//curtain movement
 long currentPosition = 0;
 long targetPosition = 0;
-long MAX_STEPS = 6000; //total steps to fully open (you need to set up yours)
+long MAX_STEPS = 6000;
 
 int lastStateA = LOW;
 int lastBtnState = HIGH;
 unsigned long lastMqttSend = 0;
+long lastSavedPosition = 0;
 
 void setup() {
   Serial.begin(115200);
   delay(1000);
   Serial.println("Starting SmartCurtain...");
 
-  //motor pins
+  prefs.begin("curtain", false);
+  currentPosition = prefs.getLong("pos", 0);
+  targetPosition = currentPosition;
+  lastSavedPosition = currentPosition;
+  Serial.print("Restored position: ");
+  Serial.println(currentPosition);
+
   pinMode(STEP_PIN, OUTPUT);
   pinMode(DIR_PIN, OUTPUT);
   pinMode(EN_PIN, OUTPUT);
   digitalWrite(EN_PIN, HIGH);
 
-  //rotary encoder pins
   pinMode(ENC_A, INPUT_PULLUP);
   pinMode(ENC_B, INPUT_PULLUP);
   pinMode(ENC_BTN, INPUT_PULLUP);
 
-  //add ons
   pinMode(RADAR_PIN, INPUT); 
   pinMode(OPTO_PIN, INPUT_PULLUP);
   pinMode(IR_PIN, OUTPUT);
@@ -57,7 +61,6 @@ void setup() {
 
   lastStateA = digitalRead(ENC_A);
 
-  //wifi connection
   Serial.print("Connecting to ");
   Serial.println(ssid);
   WiFi.begin(ssid, password);
@@ -74,7 +77,6 @@ void setup() {
   client.setCallback(callback);
 }
 
-//messages from home assistant
 void callback(char* topic, byte* payload, unsigned int length) {
   String message = "";
   for (int i = 0; i < length; i++) {
@@ -101,7 +103,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
     }
   }
 
-   if (String(topic) == "homeassistant/cover/smartcurtain/set_position") {
+  if (String(topic) == "homeassistant/cover/smartcurtain/set_position") {
     int percentage = message.toInt();
     if (percentage >= 0 && percentage <= 100) {
       targetPosition = (MAX_STEPS * percentage) / 100;
@@ -116,26 +118,24 @@ void reconnect() {
     Serial.print("Connecting to MQTT broker...");
     if (client.connect("ESP32_SmartCurtain")) {
       Serial.println("connected!");
-      
-	  client.subscribe("homeassistant/cover/smartcurtain/set");
+      client.subscribe("homeassistant/cover/smartcurtain/set");
       client.subscribe("homeassistant/cover/smartcurtain/set_position");
-      
-	  client.publish("homeassistant/cover/smartcurtain/available", "online");
+      client.publish("homeassistant/cover/smartcurtain/available", "online");
     } else {
       Serial.print("failed, rc=");
-      
-	  Serial.print(client.state());
+      Serial.print(client.state());
       Serial.println(" retrying in 3 seconds");
-      
-	  delay(3000);
-	  }}}
+      delay(3000);
+    }
+  }
+}
 
 void moveMotor() {
   if (currentPosition != targetPosition) {
     digitalWrite(EN_PIN, LOW);
 
     if (targetPosition > currentPosition) {
-      digitalWrite(DIR_PIN, HIGH); //close
+      digitalWrite(DIR_PIN, HIGH);
       digitalWrite(STEP_PIN, HIGH);
       delayMicroseconds(800);
       digitalWrite(STEP_PIN, LOW);
@@ -143,16 +143,21 @@ void moveMotor() {
       currentPosition++;
     } 
     else if (targetPosition < currentPosition) {
-      digitalWrite(DIR_PIN, LOW); //open
+      digitalWrite(DIR_PIN, LOW);
       digitalWrite(STEP_PIN, HIGH);
       delayMicroseconds(800);
       digitalWrite(STEP_PIN, LOW);
       delayMicroseconds(800);
       currentPosition--;
     }
-
   } else {
     digitalWrite(EN_PIN, HIGH);
+    if (lastSavedPosition != currentPosition) {
+      prefs.putLong("pos", currentPosition);
+      lastSavedPosition = currentPosition;
+      Serial.print("Saved position to flash: ");
+      Serial.println(currentPosition);
+    }
   }
 }
 
@@ -162,7 +167,6 @@ void loop() {
   }
   client.loop();
 
-  //manual encoder
   int stateA = digitalRead(ENC_A);
   if (stateA != lastStateA && stateA == LOW) {
     if (digitalRead(ENC_B) != stateA) {
@@ -174,6 +178,7 @@ void loop() {
     if (targetPosition < 0) targetPosition = 0;
   }
   lastStateA = stateA;
+
   int btnState = digitalRead(ENC_BTN);
   if (btnState == LOW && lastBtnState == HIGH) {
     delay(50);
@@ -184,12 +189,8 @@ void loop() {
     }
   }
   lastBtnState = btnState;
-    
+
   int radar = digitalRead(RADAR_PIN);
-  if (radar == HIGH) {
-    /*presence detected near the window
-    Serial.println("mmWave radar: motion detected!");*/
-  }
 
   moveMotor();
 
