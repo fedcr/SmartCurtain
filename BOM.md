@@ -12,14 +12,6 @@
 
 | Part | What it's for | Qty | Unit | Total | Vendor |
 | --- | --- | --- | --- | --- | --- |
-| Q1 | NPN BJT Transistor TO-92 | 1 | $0.00 | $0.00 | — |
-| R2 | Resistor 0805 6.8k ohm | 1 | $0.00 | $0.00 | — |
-| R3 | Resistor 0805 1k ohm | 1 | $0.00 | $0.00 | — |
-| R4 | Resistor 0805 47 ohm | 1 | $0.00 | $0.00 | — |
-| R5 | Resistor 0805 10k ohm | 1 | $0.00 | $0.00 | — |
-| R6 | Resistor 0805 470 ohm | 1 | $0.00 | $0.00 | — |
-| R7 | Resistor 0805 4.7k ohm (I2C pull-up) | 1 | $0.00 | $0.00 | — |
-| R8 | Resistor 0805 4.7k ohm (I2C pull-up) | 1 | $0.00 | $0.00 | — |
 | RadarmmWave1 | 4-Pin Screw Terminal (mmWave Sensor) | 1 | $0.00 | $0.00 | — |
 | SW1 | Rotary Encoder EC11 with push switch | 1 | $0.00 | $0.00 | — |
 | U1 | ESP32-C3 Wi-Fi/BLE SoC Module | 1 | $0.00 | $0.00 | — |
