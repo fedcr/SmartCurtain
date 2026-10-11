@@ -12,15 +12,6 @@
 
 | Part | What it's for | Qty | Unit | Total | Vendor |
 | --- | --- | --- | --- | --- | --- |
-| C4 | Ceramic disc capacitor 100nF | 1 | $0.00 | $0.00 | — |
-| C5 | Ceramic disc capacitor 100nF | 1 | $0.00 | $0.00 | — |
-| C6 | Ceramic disc capacitor 100nF | 1 | $0.00 | $0.00 | — |
-| D1 | 940nm IR Emitter LED 5mm | 1 | $0.00 | $0.00 | — |
-| J1 | 4-Pin Screw Terminal 5.08mm (Stepper) | 1 | $0.00 | $0.00 | — |
-| J2 | USB-C 16-Pin Receptacle | 1 | $0.00 | $0.00 | — |
-| J3 | 2-Pin Screw Terminal 5.08mm | 1 | $0.00 | $0.00 | — |
-| J5 | Mini360 Step-Down Buck Converter Module | 1 | $0.00 | $0.00 | — |
-| LuceClima1 | 4-Pin Screw Terminal (Light/Climate Sensor) | 1 | $0.00 | $0.00 | — |
 | Q1 | NPN BJT Transistor TO-92 | 1 | $0.00 | $0.00 | — |
 | R2 | Resistor 0805 6.8k ohm | 1 | $0.00 | $0.00 | — |
 | R3 | Resistor 0805 1k ohm | 1 | $0.00 | $0.00 | — |
