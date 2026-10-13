@@ -12,10 +12,9 @@
 
 | Part | What it's for | Qty | Unit | Total | Vendor |
 | --- | --- | --- | --- | --- | --- |
-| [PLA 3D filament](https://eu.elegoo.com/products/pla-filament-1-75mm-colored-1kg?variant=51888865870100) | to print the external case | 1 | $14.54 | $14.54 | [ELEGOO](https://eu.elegoo.com/products/pla-filament-1-75mm-colored-1kg?variant=51888865870100) |
 | [PETG 3D filament](https://eu.elegoo.com/collections/filaments/products/petg-pro-filament-1-75mm-colored-1kg) | to print the mechanical parts | 1 | $15.66 | $15.66 | [ELEGOO](https://eu.elegoo.com/collections/filaments/products/petg-pro-filament-1-75mm-colored-1kg) |
-| **Parts subtotal** | — | — | — | **$30.20** | — |
+| **Parts subtotal** | — | — | — | **$15.66** | — |
 | **Tax & shipping** | — | — | — | **$0.00** | — |
-| **Total** | — | — | — | **$30.20** | — |
+| **Total** | — | — | — | **$15.66** | — |
 
-**$0.20 over the tier's funding.** Every tier gives a fixed amount for parts, so this needs cutting back or a higher tier.
+$14.34 left of the tier's funding.
