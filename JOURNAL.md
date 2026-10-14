@@ -16,7 +16,7 @@
 
 1. [2026-10-12 – ### What I worked on](#2026-10-12-what-i-worked-on)
 2. [2026-10-13 – ### What I worked on](#2026-10-13-what-i-worked-on)
-3. [2026-10-14 – ###Idler Pulley and Belt Tensioner](#2026-10-14-idler-pulley-and-belt-tensioner)
+3. [2026-10-14 – ### Idler Pulley and Belt Tensioner](#2026-10-14-idler-pulley-and-belt-tensioner)
 
 ## Design
 
@@ -85,17 +85,17 @@ Implemented a major mechanical architecture overhaul in enclosure model v4, tran
 - Relocating the stepper motor moved the bottom TMC2209 vent grilles 57mm below the PCB; noted that wall mounting obstructs bottom convective airflow, necessitating optimized top lid vents and adequate duty-cycle limits on the driver holding current.
 - Initial motor placement risked shorting against sharp through-hole solder tails on the bottom layer; resolved by setting standoff height to 30mm, creating a safe 26.5mm clearance buffer beyond the longest 3.5mm leads.
 
-### 2026-10-14 – ###Idler Pulley and Belt Tensioner
+### 2026-10-14 – ### Idler Pulley and Belt Tensioner
 
 **4.5h**
 
-###Idler Pulley and Belt Tensioner
+### Idler Pulley and Belt Tensioner
 
 This session was focused on designing the belt tensioner mechanism
 
 The 3D model is split into four printable parts laid out on the build plate: the stationary wall bracket, the sliding carriage, the flanged idler pulley, and a small spacer sleeve
 
-#### What I worked on
+### What I worked on
 - I designed the fixed mount with a female dovetail channel and two triangular support ribs on the back wall to handle the pulling force of the belt. It includes side holes for wall screws and a central hole on the back plate for an M3 tensioning screw
 - I modeled a sliding fork with a male dovetail shape on the back. It holds an M3 heat-set insert and moves smoothly along the bracket to adjust belt tension in place
 - I made a pulley with side flanges to keep the timing belt from slipping off. The inside has stepped pockets to pressfit two miniature ball bearings
@@ -109,13 +109,13 @@ The 3D model is split into four printable parts laid out on the build plate: the
 
 ![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/WGWQMVpe0ED7g1oQJoTkEXFiLFC2wEVs/f62dccb4f8e215e2935261750e89e04b73ff1384eb8792e7b15d4e874ff224c9.png)
 
-#### What worked and what didn't:
-- ## What worked
+### What worked and what didn't:
+**What worked**
   - The dovetail angle is self-supporting, so all parts can be 3D printed flat or upright without support material
   - The M3 threaded insert sits inside the carriage block so the tensioning screw pulls against solid plastic, preventing the insert from ripping out under belt load.
 
 ![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/WGWQMVpe0ED7g1oQJoTkEXFiLFC2wEVs/1ada5b3d5736bdafc8ccc12c7011146cf862c4d32d692f1b834c599ba6956457.png)
 
-- ## Challenges and fixes
+**Challenges and fixes**
   - Standard 3D printed holes shrink slightly, so I added a +0.1 mm tolerance to the bearing seats so the two bearings can be pressed in snugly without cracking the plastic
   - I added a 0.2 mm clearance on the dovetail slides so the carriage glides smoothly without wobbling or getting stuck
