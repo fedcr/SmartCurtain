@@ -1,0 +1,18 @@
+ERC report (2026-10-06T16:18:14, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+[lib_symbol_mismatch]: Il simbolo 'Conn_01x08_Socket' non corrisponde alla copia nella libreria 'Connector'
+    ; warning
+    @(2600 mils, 2400 mils): Symbol U3 [Conn_01x08_Socket]
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(2650 mils, 2850 mils): No Connect
+
+ ** ERC messages: 2  Errors 0  Warnings 2
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters
